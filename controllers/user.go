@@ -44,7 +44,7 @@ func (c *User) GetStudent() {
 func (c *User) GetAllScore() {
 	var respnose dto.ReponseDTO
 	score, err := models.GetAllScore()
-	var msg string = "success"
+	var msg = "success"
 	var code uint16	=	dto.RIGHT_CODE
 	if err != nil {
 		msg = err.Error()

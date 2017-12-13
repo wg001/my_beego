@@ -8,15 +8,13 @@ import (
 type Score struct {
 	Id uint16 `json:"id" orm:"pk;column(id)"`
 	Name string `json:"name" orm:"column(name)"`
+	UserId uint32 `json:"user_id"`
 	TypePosition string `json:"type_position" orm:"column(type_position)"`
 	CourseId uint8 `json:"course_id" orm:"column(course_id)"`
 	Score uint8 `json:"score" orm:"column(score)"`
+	Student *StudentInfo `json:"student" orm:"rel(fk)"`
 }
-var table string
 var ormObj orm.Ormer
-func init()  {
-	table=(&Score{}).TableName()
-}
 
 func GetScoreByUser() (Score,error){
 	o := orm.NewOrm()
@@ -31,9 +29,9 @@ func GetScoreByUser() (Score,error){
 }
 
 func GetAllScore()([]*Score,error){
-
 	var score []*Score
 	ormObj=orm.NewOrm()
+	table:=(&Score{}).TableName()
 	query:=ormObj.QueryTable(table)
 	_, _ =query.All(&score)
 	return score,nil
