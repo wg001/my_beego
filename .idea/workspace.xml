@@ -2,261 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a5e4e21-da37-410c-b38c-b149b4448347" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/my_beego.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dto/response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/scoremodel.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/scoremodel_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/student.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/student_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/rep_sql.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/reload.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/default_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/.github/ISSUE_TEMPLATE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/.gosimpleignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/admin.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/admin_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/adminui.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/app.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/beego.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/cache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/cache_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/conv.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/conv_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/memcache/memcache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/memcache/memcache_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/memory.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/redis/redis.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/redis/redis_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/ssdb/ssdb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/cache/ssdb/ssdb_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/config_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/env/env.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/env/env_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/fake.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/ini.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/ini_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/json.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/json_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/xml/xml.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/xml/xml_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/yaml/yaml.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config/yaml/yaml_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/config_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/acceptencoder.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/acceptencoder_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/context.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/context_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/input.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/input_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/output.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/param/conv.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/param/methodparams.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/param/options.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/param/parsers.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/param/parsers_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/renderer.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/context/response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/controller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/controller_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/error.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/error_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/filter.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/filter_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/flash.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/flash_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/grace/conn.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/grace/grace.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/grace/listener.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/grace/server.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/hooks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/httplib/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/httplib/httplib.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/httplib/httplib_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/log.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/accesslog.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/alils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/log.pb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/log_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/log_project.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/log_store.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/machine_group.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/request.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/alils/signature.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/color.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/color_windows.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/color_windows_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/conn.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/conn_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/console.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/console_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/es/es.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/file_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/jianliao.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/log.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/logger.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/logger_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/multifile.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/multifile_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/slack.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/smtp.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/logs/smtp_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/migration/ddl.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/migration/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/migration/migration.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/mime.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/namespace.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/namespace_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/cmd.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/cmd_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_alias.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_oracle.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_postgres.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_sqlite.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_tables.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_tidb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/db_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_boot.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_fields.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_info_f.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_info_m.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/models_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_conds.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_log.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_object.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_querym2m.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_queryset.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_raw.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/orm_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/qb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/qb_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/qb_tidb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/types.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/orm/utils_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/parser.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/apiauth/apiauth.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/apiauth/apiauth_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/auth/basic.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/authz/authz.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/authz/authz_model.conf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/authz/authz_policy.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/authz/authz_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/cors/cors.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/plugins/cors/cors_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/policy.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/router.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/router_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/couchbase/sess_couchbase.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/ledis/ledis_session.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/memcache/sess_memcache.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/mysql/sess_mysql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/postgres/sess_postgresql.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/redis/sess_redis.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_cookie.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_cookie_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_mem.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_mem_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/sess_utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/session.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/session/ssdb/sess_ssdb.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/staticfile.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/staticfile_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/swagger/swagger.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/template.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/template_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/templatefunc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/templatefunc_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/testing/assertions.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/testing/client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/healthcheck.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/profile.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/profile_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/statistics.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/statistics_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/task.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/toolbox/task_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/tree.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/tree_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/unregroute_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/caller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/caller_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/captcha.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/image.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/image_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/siprng.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/captcha/siprng_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/debug.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/debug_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/file_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/mail.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/mail_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/pagination/controller.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/pagination/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/pagination/paginator.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/pagination/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/rand.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/rand_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/safemap.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/safemap_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/slice.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/slice_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/testdata/grepe.test" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/utils/utils.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/util.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/util_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/validation.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/validation_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/astaxie/beego/validation/validators.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/.travis.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/constantdelay.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/constantdelay_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/cron.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/cron_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/doc.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/parser.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/parser_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/robfig/cron/spec_test.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/views/index.tpl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -315,8 +62,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="56">
-                <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <first_editor relative-caret-position="84">
+                <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -419,6 +166,7 @@
         <option value="$PROJECT_DIR$/models/student_test.go" />
         <option value="$PROJECT_DIR$/rep_sql.sql" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1113,8 +861,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="56">
-            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <first_editor relative-caret-position="84">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>

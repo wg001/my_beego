@@ -1,2 +1,3 @@
 # my_beego
-just for wg
+
+### study go and beego ###
