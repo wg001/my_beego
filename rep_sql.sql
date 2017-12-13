@@ -37,7 +37,6 @@ insert  into `score`(`id`,`user_id`,`name`,`type_position`,`course_id`,`score`) 
 
 /*Table structure for table `student` */
 
-
 DROP TABLE IF EXISTS `student`;
 
 CREATE TABLE `student` (
