@@ -27,3 +27,8 @@ func TestGetStudentInfo(t *testing.T) {
 	s,_:=GetStudentInfo()
 	fmt.Printf("----------------%v",s)
 }
+
+func TestStudent_SaveStudent(t *testing.T) {
+	//SaveStudent()
+	GetData2Excel()
+}
