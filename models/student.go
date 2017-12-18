@@ -9,6 +9,8 @@ import (
 	"encoding/json"
 	"strconv"
 	"github.com/360EntSecGroup-Skylar/excelize"
+	//"github.com/tealeg/xlsx"
+	"go/src/log"
 )
 
 type Student struct {
@@ -115,7 +117,7 @@ func GetStudentInfoLimit(offset uint) ([]orm.Params,error) {
 	//param:=[]string{studentTable,strconv.Itoa(int(offset)),}
 	length:=100000
 	//offStart:=uint()
-	sql := fmt.Sprintf("SELECT s.id,s.address,s.create_time,s.name,s.email FROM %s as s WHERE s.id>0 and s.id<=500000 limit %d,%d",studentTable,int(offset)*length,length)
+	sql := fmt.Sprintf("SELECT s.id,s.address,s.create_time,s.name,s.email FROM %s as s WHERE s.id>0 and s.id<=100 limit %d,%d",studentTable,int(offset)*length,length)
 	logs.Info(">>>>>" + sql)
 	var maps []orm.Params
 	//_,err := ormObj.Raw(sql).QueryRows(&strudent)
@@ -128,7 +130,6 @@ func GetStudentInfoLimit(offset uint) ([]orm.Params,error) {
 	logs.Info(string(bytes))
 	return maps,nil
 }
-
 func GetData2Excel(){
 	var result []orm.Params
 	limit :=uint(0)
@@ -152,19 +153,62 @@ func GetData2Excel(){
 	fmt.Println(">>>>>>>>>>>>>>")
 	fmt.Println(len(result))
 	fmt.Print(result)
-	xlsx := excelize.NewFile()
+	xlsx:=excelize.NewFile()
+	xlsx.SaveAs("./Workbook1.xlsx")
+
+	//c := make(chan int)
+	//d := make(chan int)
+	sheetPath:=fmt.Sprintf("./Workbook%s.xlsx","1")
+	xlsx,err := excelize.OpenFile(sheetPath)
+	if err!=nil{
+		logs.Info("<<<<<<<<<<<<<%v\n",err)
+	}
+	excelSource:=make(chan *excelize.File,2)
+	go func(result2 []orm.Params) {
+		InsertExcel(result2,excelSource,len(result)/2,"2",xlsx)
+	}(result[len(result)/2:])
+
+
+	go func(result1 []orm.Params) {
+		InsertExcel(result1,excelSource,0,"1",xlsx)
+	}(result[:len(result)/2])
+	saveExcel(excelSource,2)
+	fmt.Println(">>>>>>>>>>ok")
+
+}
+
+func saveExcel(c <-chan *excelize.File,count int){
+	for i:=0;i<count;i++{
+		v:=<-c
+		log.Printf("cccccccccccccc%v\n",v)
+		v.Save()
+	}
+}
+
+func InsertExcel(result []orm.Params, c chan<- *excelize.File,start int,tag string,xlsx *excelize.File)  {
+
+	logs.Info("\n get resource")
+	//if err!=nil{
+	//	fmt.Printf("This is tag:%s--%v",tag,err)
+	//	xlsx = excelize.NewFile()
+	//	xlsx.SaveAs(sheetPath)
+	//	xlsx,_=excelize.OpenFile(sheetPath)
+	//}
+	//xlsx := excelize.NewFile()
 	sheetName:="Sheet1"
 	for key,value:=range result{
-		xlsx.SetCellValue(sheetName,"A"+strconv.Itoa(key+1),value["address"])
-		xlsx.SetCellValue(sheetName,"B"+strconv.Itoa(key+1),value["create_time"])
-		xlsx.SetCellValue(sheetName,"C"+strconv.Itoa(key+1),value["name"])
-		xlsx.SetCellValue(sheetName,"D"+strconv.Itoa(key+1),value["email"])
-		xlsx.SetCellValue(sheetName,"E"+strconv.Itoa(key+1),value["id"])
+		xlsx.SetCellValue(sheetName,"A"+strconv.Itoa(key+start+1),value["address"])
+		xlsx.SetCellValue(sheetName,"B"+strconv.Itoa(key+start+1),value["create_time"])
+		xlsx.SetCellValue(sheetName,"C"+strconv.Itoa(key+start+1),value["name"])
+		xlsx.SetCellValue(sheetName,"D"+strconv.Itoa(key+start+1),value["email"])
+		xlsx.SetCellValue(sheetName,"E"+strconv.Itoa(key+start+1),value["id"])
 	}
-	err := xlsx.SaveAs("./Workbook1.xlsx")
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(">>>>>>>>>>ok")
+	//err = xlsx.Save()
+	c<-xlsx
+	//if err != nil {
+	//	logs.Info("------------------------%s",tag)
+	//	fmt.Println(err)
+	//}
+	logs.Info("\n in goroutine")
 
 }

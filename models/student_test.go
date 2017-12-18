@@ -30,5 +30,6 @@ func TestGetStudentInfo(t *testing.T) {
 
 func TestStudent_SaveStudent(t *testing.T) {
 	//SaveStudent()
+	//GetData2Excel()
 	GetData2Excel()
 }
