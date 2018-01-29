@@ -4,6 +4,8 @@ import (
 	"github.com/astaxie/beego"
 	"my_beego/models"
 	"my_beego/dto"
+	"Test2/framework/beego/logs"
+	"net/http"
 )
 
 type User struct {
@@ -43,7 +45,9 @@ func (c *User) GetStudent() {
 }
 func (c *User) GetAllScore() {
 	var respnose dto.ReponseDTO
+	logs.Info(">>>>>>>>>>>>>>>>>")
 	score, err := models.GetAllScore()
+	logs.Info("-----------------")
 	var msg = "success"
 	var code uint16	=	dto.RIGHT_CODE
 	if err != nil {

@@ -6,13 +6,13 @@ import (
 )
 
 type Score struct {
-	Id           uint16   `json:"id" orm:"pk;column(id)"`
-	Name         string   `json:"name" orm:"column(name)"`
-	UserId       uint32   `json:"user_id"`
-	TypePosition string   `json:"type_position" orm:"column(type_position)"`
-	CourseId     uint8    `json:"course_id" orm:"column(course_id)"`
-	Score        uint8    `json:"score" orm:"column(score)"`
-	Student      *Student `json:"student" orm:"rel(fk)"`
+	Id uint16 `json:"id" orm:"pk;column(id)"`
+	Name string `json:"name" orm:"column(name)"`
+	UserId uint32 `json:"user_id"`
+	TypePosition string `json:"type_position" orm:"column(type_position)"`
+	CourseId uint8 `json:"course_id" orm:"column(course_id)"`
+	Score uint8 `json:"score" orm:"column(score)"`
+	//Student *StudentInfo `json:"student" orm:"rel(fk)"`
 }
 
 var ormObj orm.Ormer

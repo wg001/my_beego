@@ -3,7 +3,6 @@ package models
 import (
 	"time"
 	//"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego/orm"
 	"fmt"
 	"github.com1/astaxie/beego/logs"
 	"encoding/json"
@@ -67,6 +66,8 @@ func GetStudentInfo() ([]orm.Params, error) {
 	logs.Info(string(bytes))
 	return maps, nil
 }
+
+
 
 func (student *Student) TableName() string {
 	return "student"
