@@ -15,7 +15,7 @@ func init()  {
 	orm.RegisterModel(new(Score))
 	orm.RegisterModel(new(Student))
 	//orm.RegisterModel(new(StudentInfo))
-	orm.RegisterDataBase("default", "mysql", "root:12345678@tcp(127.0.0.1:3306)/localstudy?charset=utf8")
+	orm.RegisterDataBase("default", "mysql", "root@tcp(127.0.0.1:3306)/localstudy?charset=utf8")
 	// 自动建表
 	orm.RunSyncdb("default", false, true)
 }

@@ -61,3 +61,15 @@ func (c *User) GetAllScore() {
 	c.Data["json"] =respnose
 	c.ServeJSON()
 }
+func (c *User) GetUserScoreContent() {
+	result, err := models.GetStudentInfo()
+	var msg = "success"
+	var code uint16	=	dto.RIGHT_CODE
+	if err != nil {
+		msg = err.Error()
+		code=dto.ERROR_CODE
+	}
+
+	c.Data["json"] =dto.ReponseDTO{Code:code,Message:msg,Data:result}
+	c.ServeJSON()
+}

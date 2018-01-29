@@ -36,7 +36,7 @@ func TestGetStudent(t *testing.T) {
 	fmt.Printf("----------------%v",s)
 }
 func TestGetStudentInfo(t *testing.T) {
-	s:=GetStudentInfo()
+	s,_:=GetStudentInfo()
 	fmt.Printf("----------------%v",s)
 }
 
@@ -79,4 +79,9 @@ func TestRedigo(t *testing.T)  {
 	}
 	fmt.Println(v)
 
+}
+func TestStudent_SaveStudent(t *testing.T) {
+	//SaveStudent()
+	//GetData2Excel()
+	GetData2Excel()
 }
