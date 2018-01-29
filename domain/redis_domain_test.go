@@ -1,7 +1,12 @@
 package domain
 
-import "testing"
+import (
+	"testing"
+	"beego/logs"
+)
 
 func Test_Setdata(t *testing.T)  {
-	GetDataFromList("wanggang")
+	logs.Info("start")
+	DataTest("wanggang")
+	logs.Info("end")
 }

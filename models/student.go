@@ -91,10 +91,13 @@ func SaveStudentByObj(student *Student) int64 {
 	return affectRow
 }
 
-func SaveStudentMutil(studentMap []*Student)int64{
+func SaveStudentMutil(studentMap []Student)int64{
 	ormObj := orm.NewOrm()
-	affectRow, err := ormObj.InsertMulti(len(studentTable), studentMap)
+	affectRow, err := ormObj.InsertMulti(len(studentMap), studentMap)
 	if err!=nil{
+		logs.Debug("*****************")
+		logs.Debug(studentMap)
+		logs.Debug("*****************")
 		fmt.Printf("something wrong %v\n",err)
 	}
 	fmt.Printf("affect rows :%d",affectRow)
