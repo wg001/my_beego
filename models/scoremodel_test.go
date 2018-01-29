@@ -4,7 +4,7 @@ import (
 	"testing"
 	"fmt"
 	"github.com/astaxie/beego/orm"
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"//会在init中进行加载
 )
 
 func init()  {

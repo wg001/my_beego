@@ -12,7 +12,7 @@ type Score struct {
 	TypePosition string `json:"type_position" orm:"column(type_position)"`
 	CourseId uint8 `json:"course_id" orm:"column(course_id)"`
 	Score uint8 `json:"score" orm:"column(score)"`
-	Student *StudentInfo `json:"student" orm:"rel(fk)"`
+	//Student *StudentInfo `json:"student" orm:"rel(fk)"`
 }
 var ormObj orm.Ormer
 

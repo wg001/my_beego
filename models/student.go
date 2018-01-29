@@ -3,17 +3,17 @@ package models
 import (
 	"time"
 	//"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego/orm"
 	"fmt"
+	"github.com/astaxie/beego/orm"
 )
 
 type Student struct {
-	Id         uint32        `json:"id"`
-	Name       string        `json:"name"`
-	Birthday   string        `json:"birthday"`
-	Sex        uint8         `json:"sex"`
-	Email      string        `json:"email"`
-	Address    string        `json:"address"`
+	Id         uint32    `json:"id"`
+	Name       string    `json:"name"`
+	Birthday   string    `json:"birthday"`
+	Sex        uint8     `json:"sex"`
+	Email      string    `json:"email"`
+	Address    string    `json:"address"`
 	UpdateTime time.Time `json:"update_time"`
 	CreateTime time.Time `json:"create_time"`
 	//Score      []*Score      `json:"score" orm:"reverse(many)"`
@@ -53,6 +53,8 @@ func GetStudentInfo() StudentInfo {
 	}
 	return strudent
 }
+
+
 
 func (student *Student) TableName() string {
 	return "student"
